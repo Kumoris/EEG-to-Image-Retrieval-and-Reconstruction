@@ -1,0 +1,20 @@
+expert_ckpts:
+  image: runs/atms_vitl_seed0/best.pt
+  text: runs/atms_text_vitl_seed0/best.pt
+  depth: runs/atms_depth_vitl_seed0/best.pt
+  edge: runs/atms_edge_vitl_seed0/best.pt
+fusion:
+  depth: 2
+  heads: 8
+  dropout: 0.1
+  modality_dropout_p: 0.2
+  freeze_experts: true
+train:
+  epochs: 30
+  batch_size: 256
+  num_workers: 4
+  lr: 0.0003
+  lr_min: 0.000001
+  weight_decay: 0.001
+  lambda_clip: 0.9
+  val_fraction: 0.1

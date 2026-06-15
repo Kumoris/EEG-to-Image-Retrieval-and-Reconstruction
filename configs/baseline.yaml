@@ -1,0 +1,22 @@
+data_dir: image-eeg-data
+output_dir: outputs/baseline
+
+training:
+  epochs: 20
+  batch_size: 64
+  lr: 0.001
+  weight_decay: 0.0001
+  temperature: 0.07
+  seed: 0
+
+model:
+  embedding_dim: 512
+  hidden_dim: 128
+
+features:
+  backend: simple
+  image_size: 32
+
+reconstruction:
+  image_size: 256
+

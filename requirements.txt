@@ -1,0 +1,11 @@
+numpy
+torch
+Pillow
+PyYAML
+tqdm
+pytest
+torchvision
+open_clip_torch
+timm
+diffusers
+transformers

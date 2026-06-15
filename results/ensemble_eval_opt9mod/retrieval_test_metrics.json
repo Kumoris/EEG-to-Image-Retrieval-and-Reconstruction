@@ -1,0 +1,130 @@
+{
+  "split": "test",
+  "normalize": "none",
+  "metric_scope": {
+    "greedy_top1": "Standard retrieval: each query independently selects argmax candidate. Applicable to both open and closed retrieval.",
+    "greedy_top5": "Standard retrieval: each query independently selects top-5 candidates. Applicable to both open and closed retrieval.",
+    "hungarian_top1": "Closed-set bipartite optimal assignment (Kuhn-Munkres). Requires N_query == N_candidate. NOT directly comparable to standard retrieval Top-1. Applicable only to closed-set scenarios with equal query and gallery sizes."
+  },
+  "metrics": {
+    "top1_acc": 0.6700000166893005,
+    "top5_acc": 0.8899999856948853
+  },
+  "hungarian": {
+    "top1_acc": 0.965,
+    "top1_count": 193,
+    "top5_acc": 0.995,
+    "total": 200,
+    "greedy_top1_acc": 0.67,
+    "greedy_top1_count": 134,
+    "greedy_top5_acc": 0.8899999856948853,
+    "net_gain": 59,
+    "iterative_hungarian_topk": {
+      "1": 0.965,
+      "2": 0.975,
+      "3": 0.99,
+      "4": 0.995,
+      "5": 0.995
+    },
+    "hungarian_topk": 5,
+    "metric_scope": {
+      "hungarian_top1": "Closed-set bipartite optimal assignment (Kuhn-Munkres algorithm). Solves a global 1-to-1 matching over the N_query x N_candidate similarity matrix. Requires N_query == N_candidate (square matrix). This metric is NOT directly comparable to standard retrieval Top-1 (which allows multiple queries to match the same candidate). Applicable only to closed-set scenarios with equal query and gallery sizes.",
+      "iterative_hungarian_topk": "K-best bipartite matching via successive Hungarian rounds. After each optimal assignment, matched cells are masked and the assignment is repeated. For each query, the union of candidates across all rounds forms the Top-K candidate set. Provides a principled closed-set Top-K extension of Hungarian matching (Chegireddy & Hamacher, 1987). NOT directly comparable to standard greedy retrieval Top-K.",
+      "greedy_top5": "Standard row-independent retrieval metric. Each query independently selects its top-k candidates. Directly comparable across methods and applicable to both open and closed retrieval."
+    }
+  },
+  "weights": {
+    "msblur6": 0.2226,
+    "edge": 0.2431,
+    "deep_vae": 0.2225,
+    "deep_rn50": 0.0987,
+    "deep_vitb32": 0.0853,
+    "depth": 0.0426,
+    "image": 0.0426,
+    "deep_dinov2": 0.0426
+  },
+  "sources": {
+    "msblur6": [
+      "results/deep_linear_seed0_test_tta5.logits.pt",
+      "results/deep_linear_seed1_test_tta5.logits.pt",
+      "results/deep_linear_seed2_test_tta5.logits.pt",
+      "results/deep_linear_seed3_test_tta5.logits.pt",
+      "results/deep_linear_seed4_test_tta5.logits.pt",
+      "results/deep_linear_seed5_test_tta5.logits.pt",
+      "results/deep_linear_seed6_test_tta5.logits.pt",
+      "results/deep_linear_seed7_test_tta5.logits.pt",
+      "results/deep_linear_seed8_test_tta5.logits.pt",
+      "results/deep_linear_seed9_test_tta5.logits.pt"
+    ],
+    "edge": [
+      "results/deep_vitl_edge_seed0_test_tta5.logits.pt",
+      "results/deep_vitl_edge_seed1_test_tta5.logits.pt",
+      "results/deep_vitl_edge_seed2_test_tta5.logits.pt",
+      "results/deep_vitl_edge_seed3_test_tta5.logits.pt",
+      "results/deep_vitl_edge_seed4_test_tta5.logits.pt",
+      "results/deep_vitl_edge_seed5_test_tta5.logits.pt",
+      "results/deep_vitl_edge_seed6_test_tta5.logits.pt",
+      "results/deep_vitl_edge_seed7_test_tta5.logits.pt",
+      "results/deep_vitl_edge_seed8_test_tta5.logits.pt",
+      "results/deep_vitl_edge_seed9_test_tta5.logits.pt"
+    ],
+    "deep_vae": [
+      "results/deep_vae_seed0_test_tta5.logits.pt",
+      "results/deep_vae_seed1_test_tta5.logits.pt",
+      "results/deep_vae_seed2_test_tta5.logits.pt",
+      "results/deep_vae_seed3_test_tta5.logits.pt",
+      "results/deep_vae_seed4_test_tta5.logits.pt",
+      "results/deep_vae_seed5_test_tta5.logits.pt",
+      "results/deep_vae_seed6_test_tta5.logits.pt",
+      "results/deep_vae_seed7_test_tta5.logits.pt",
+      "results/deep_vae_seed8_test_tta5.logits.pt",
+      "results/deep_vae_seed9_test_tta5.logits.pt"
+    ],
+    "deep_rn50": [
+      "results/deep_rn50_seed0_test_tta5.logits.pt",
+      "results/deep_rn50_seed1_test_tta5.logits.pt",
+      "results/deep_rn50_seed2_test_tta5.logits.pt",
+      "results/deep_rn50_seed3_test_tta5.logits.pt",
+      "results/deep_rn50_seed4_test_tta5.logits.pt",
+      "results/deep_rn50_seed5_test_tta5.logits.pt",
+      "results/deep_rn50_seed6_test_tta5.logits.pt",
+      "results/deep_rn50_seed7_test_tta5.logits.pt",
+      "results/deep_rn50_seed8_test_tta5.logits.pt",
+      "results/deep_rn50_seed9_test_tta5.logits.pt"
+    ],
+    "deep_vitb32": [
+      "results/deep_vit_b_32_seed0_test_tta5.logits.pt",
+      "results/deep_vit_b_32_seed1_test_tta5.logits.pt",
+      "results/deep_vit_b_32_seed2_test_tta5.logits.pt"
+    ],
+    "depth": [
+      "results/deep_vitl_depth_seed0_test_tta5.logits.pt",
+      "results/deep_vitl_depth_seed1_test_tta5.logits.pt",
+      "results/deep_vitl_depth_seed2_test_tta5.logits.pt",
+      "results/deep_vitl_depth_seed3_test_tta5.logits.pt",
+      "results/deep_vitl_depth_seed4_test_tta5.logits.pt",
+      "results/deep_vitl_depth_seed5_test_tta5.logits.pt",
+      "results/deep_vitl_depth_seed6_test_tta5.logits.pt",
+      "results/deep_vitl_depth_seed7_test_tta5.logits.pt",
+      "results/deep_vitl_depth_seed8_test_tta5.logits.pt",
+      "results/deep_vitl_depth_seed9_test_tta5.logits.pt"
+    ],
+    "image": [
+      "results/deep_vitl_image_seed0_test_tta5.logits.pt",
+      "results/deep_vitl_image_seed1_test_tta5.logits.pt",
+      "results/deep_vitl_image_seed2_test_tta5.logits.pt",
+      "results/deep_vitl_image_seed3_test_tta5.logits.pt",
+      "results/deep_vitl_image_seed4_test_tta5.logits.pt",
+      "results/deep_vitl_image_seed5_test_tta5.logits.pt",
+      "results/deep_vitl_image_seed6_test_tta5.logits.pt",
+      "results/deep_vitl_image_seed7_test_tta5.logits.pt",
+      "results/deep_vitl_image_seed8_test_tta5.logits.pt",
+      "results/deep_vitl_image_seed9_test_tta5.logits.pt"
+    ],
+    "deep_dinov2": [
+      "results/deep_dinov2_da2_seed0_test_tta5.logits.pt",
+      "results/deep_dinov2_da2_seed1_test_tta5.logits.pt",
+      "results/deep_dinov2_da2_seed2_test_tta5.logits.pt"
+    ]
+  }
+}

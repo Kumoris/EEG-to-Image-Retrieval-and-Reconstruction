@@ -1,0 +1,20 @@
+\begin{table}[htbp]
+\centering
+\caption{Single-modality ablation. Each modality is evaluated after seed averaging. Multi-scale foveated blur achieves the strongest single-modality performance, while other visual representations provide complementary signals for ensemble retrieval.}
+\label{tab:single_modality}
+\begin{tabular}{llccc}
+\toprule
+\textbf{Modality} & \textbf{Visual Feature} & \textbf{Seeds} & \textbf{G-T1} & \textbf{G-T5} \\
+\midrule
+msblur6 & ViT-L multi-scale foveated blur & 10 & \textbf{50.0\%} & \textbf{83.5\%} \\
+msblur2 & ViT-L multi-scale blur (depth=2) & 10 & 48.0\% & 81.5\% \\
+depth & ViT-L depth proxy & 10 & 38.5\% & 76.0\% \\
+image & ViT-L clean image & 10 & 37.0\% & 65.5\% \\
+edge & ViT-L edge image & 10 & 34.5\% & 69.5\% \\
+rn50 & CLIP ResNet-50 & 10 & 34.0\% & 68.0\% \\
+clip\_vitb32 & CLIP ViT-B/32 & 3 & 32.0\% & 69.5\% \\
+dinov2 & DINOv2 ViT-B/14 (2-aug) & 3 & --- & --- \\
+vae & Stable Diffusion VAE latent & 10 & 12.5\% & 40.0\% \\
+\bottomrule
+\end{tabular}
+\end{table}

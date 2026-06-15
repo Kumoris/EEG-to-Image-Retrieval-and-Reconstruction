@@ -1,0 +1,14 @@
+\begin{table}[htbp]
+\centering
+\caption{Reconstruction method ablation. We compare three strategies: (1) train-nearest image selection, (2) SDXL-Turbo text-to-image from retrieval top-5 concepts, and (3) SDXL-Turbo image-to-image from train-nearest source. Best results in \textbf{bold}.}
+\label{tab:reconstruction_ablation}
+\begin{tabular}{lcccccc}
+\toprule
+\textbf{Method} & \textbf{Generation Type} & \textbf{Train Image} & \textbf{CLIP} & \textbf{SSIM} & \textbf{AlexNet-5} & \textbf{Inception} \\
+\midrule
+concept\_train\_nearest & Nearest-neighbor retrieval & Required & \textbf{0.8816} & 0.3415 & \textbf{0.8586} & 0.8390 \\
+diffusion\_prompt (\textbf{Ours}) & Text-to-image (SDXL-Turbo) & Not needed & 0.8640 & \textbf{0.3814} & 0.8534 & \textbf{0.8679} \\
+diffusion\_img2img & Image-to-image (SDXL-Turbo) & Required & 0.8048 & 0.3694 & 0.6427 & 0.7528 \\
+\bottomrule
+\end{tabular}
+\end{table}

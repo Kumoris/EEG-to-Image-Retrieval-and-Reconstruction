@@ -1,0 +1,56 @@
+seed: 0
+data:
+  data_dir: image-eeg-data
+  avg_trials_train: false
+  avg_trials_eval: true
+  selected_channels: null
+features:
+  clip_backbone: RN50
+  feature_dim: 512
+  sigma0: 8
+  blur_c: 6
+model:
+  embed_dim: 512
+  expert_hidden: 256
+  dropout: 0.1
+  fusion_layers: 2
+  fusion_heads: 8
+loss:
+  tau: 0.07
+  scm_top_k: 10
+  w_img: 1.0
+  w_text: 0.3
+  w_depth: 0.4
+  w_edge: 0.5
+  w_fusion: 1.2
+  w_scm_fusion: 0.8
+  w_scm_img: 0.3
+  lambda_mse: 1.0
+  lambda_cos: 0.5
+  lambda_reg: 0.0001
+um:
+  enabled: true
+  gamma: 0.3
+  z: 1.0
+augment:
+  noise_std: 0.01
+  channel_dropout_p: 0.1
+  temporal_jitter: 0
+  time_mask_frac: 0.1
+train:
+  epochs: 80
+  align_epochs: 30
+  finetune_epochs: 15
+  batch_size: 512
+  grad_accum: 1
+  lr: 0.0001
+  finetune_lr: 0.00001
+  weight_decay: 0.01
+  warmup_epochs: 5
+  amp: true
+  grad_clip: 1.0
+eval:
+  ensemble_weights:
+    img: 0.30
+    fusion: 0.50
+    aligned: 0.20

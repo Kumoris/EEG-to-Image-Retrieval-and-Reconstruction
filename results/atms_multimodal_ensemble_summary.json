@@ -1,0 +1,200 @@
+{
+  "best": "weighted_i50_d20_e20_f10",
+  "results": {
+    "image10_model_avg": {
+      "top1_acc": 0.375,
+      "top5_acc": 0.6700000166893005,
+      "members": [
+        "results/atms_vitl_seed0_test_tta0.logits.pt",
+        "results/atms_vitl_seed1_test_tta0.logits.pt",
+        "results/atms_vitl_seed2_test_tta0.logits.pt",
+        "results/atms_vitl_seed3_test_tta0.logits.pt",
+        "results/atms_vitl_seed4_test_tta0.logits.pt",
+        "results/atms_vitl_seed5_test_tta0.logits.pt",
+        "results/atms_vitl_seed6_test_tta0.logits.pt",
+        "results/atms_vitl_seed7_test_tta0.logits.pt",
+        "results/atms_vitl_seed8_test_tta0.logits.pt",
+        "results/atms_vitl_seed9_test_tta0.logits.pt"
+      ]
+    },
+    "all40_model_avg": {
+      "top1_acc": 0.4449999928474426,
+      "top5_acc": 0.7900000214576721,
+      "members": [
+        "results/atms_vitl_seed0_test_tta0.logits.pt",
+        "results/atms_vitl_seed1_test_tta0.logits.pt",
+        "results/atms_vitl_seed2_test_tta0.logits.pt",
+        "results/atms_vitl_seed3_test_tta0.logits.pt",
+        "results/atms_vitl_seed4_test_tta0.logits.pt",
+        "results/atms_vitl_seed5_test_tta0.logits.pt",
+        "results/atms_vitl_seed6_test_tta0.logits.pt",
+        "results/atms_vitl_seed7_test_tta0.logits.pt",
+        "results/atms_vitl_seed8_test_tta0.logits.pt",
+        "results/atms_vitl_seed9_test_tta0.logits.pt",
+        "results/atms_text_vitl_seed0_test_tta0.logits.pt",
+        "results/atms_text_vitl_seed1_test_tta0.logits.pt",
+        "results/atms_text_vitl_seed2_test_tta0.logits.pt",
+        "results/atms_text_vitl_seed3_test_tta0.logits.pt",
+        "results/atms_text_vitl_seed4_test_tta0.logits.pt",
+        "results/atms_text_vitl_seed5_test_tta0.logits.pt",
+        "results/atms_text_vitl_seed6_test_tta0.logits.pt",
+        "results/atms_text_vitl_seed7_test_tta0.logits.pt",
+        "results/atms_text_vitl_seed8_test_tta0.logits.pt",
+        "results/atms_text_vitl_seed9_test_tta0.logits.pt",
+        "results/atms_depth_vitl_seed0_test_tta0.logits.pt",
+        "results/atms_depth_vitl_seed1_test_tta0.logits.pt",
+        "results/atms_depth_vitl_seed2_test_tta0.logits.pt",
+        "results/atms_depth_vitl_seed3_test_tta0.logits.pt",
+        "results/atms_depth_vitl_seed4_test_tta0.logits.pt",
+        "results/atms_depth_vitl_seed5_test_tta0.logits.pt",
+        "results/atms_depth_vitl_seed6_test_tta0.logits.pt",
+        "results/atms_depth_vitl_seed7_test_tta0.logits.pt",
+        "results/atms_depth_vitl_seed8_test_tta0.logits.pt",
+        "results/atms_depth_vitl_seed9_test_tta0.logits.pt",
+        "results/atms_edge_vitl_seed0_test_tta0.logits.pt",
+        "results/atms_edge_vitl_seed1_test_tta0.logits.pt",
+        "results/atms_edge_vitl_seed2_test_tta0.logits.pt",
+        "results/atms_edge_vitl_seed3_test_tta0.logits.pt",
+        "results/atms_edge_vitl_seed4_test_tta0.logits.pt",
+        "results/atms_edge_vitl_seed5_test_tta0.logits.pt",
+        "results/atms_edge_vitl_seed6_test_tta0.logits.pt",
+        "results/atms_edge_vitl_seed7_test_tta0.logits.pt",
+        "results/atms_edge_vitl_seed8_test_tta0.logits.pt",
+        "results/atms_edge_vitl_seed9_test_tta0.logits.pt"
+      ]
+    },
+    "image10_plus_seed0_tde_fusion_model_avg": {
+      "top1_acc": 0.4350000023841858,
+      "top5_acc": 0.7300000190734863,
+      "members": [
+        "results/atms_vitl_seed0_test_tta0.logits.pt",
+        "results/atms_vitl_seed1_test_tta0.logits.pt",
+        "results/atms_vitl_seed2_test_tta0.logits.pt",
+        "results/atms_vitl_seed3_test_tta0.logits.pt",
+        "results/atms_vitl_seed4_test_tta0.logits.pt",
+        "results/atms_vitl_seed5_test_tta0.logits.pt",
+        "results/atms_vitl_seed6_test_tta0.logits.pt",
+        "results/atms_vitl_seed7_test_tta0.logits.pt",
+        "results/atms_vitl_seed8_test_tta0.logits.pt",
+        "results/atms_vitl_seed9_test_tta0.logits.pt",
+        "results/atms_text_vitl_seed0_test_tta0.logits.pt",
+        "results/atms_depth_vitl_seed0_test_tta0.logits.pt",
+        "results/atms_edge_vitl_seed0_test_tta0.logits.pt",
+        "results/atms_fusion_vitl_seed0_test.logits.pt"
+      ]
+    },
+    "modavg_image+text": {
+      "top1_acc": 0.35499998927116394,
+      "top5_acc": 0.6650000214576721,
+      "members": [
+        "image",
+        "text"
+      ]
+    },
+    "modavg_image+depth": {
+      "top1_acc": 0.41499999165534973,
+      "top5_acc": 0.7649999856948853,
+      "members": [
+        "image",
+        "depth"
+      ]
+    },
+    "modavg_image+edge": {
+      "top1_acc": 0.42500001192092896,
+      "top5_acc": 0.7749999761581421,
+      "members": [
+        "image",
+        "edge"
+      ]
+    },
+    "modavg_image+depth+edge": {
+      "top1_acc": 0.4699999988079071,
+      "top5_acc": 0.800000011920929,
+      "members": [
+        "image",
+        "depth",
+        "edge"
+      ]
+    },
+    "modavg_image+text+depth+edge": {
+      "top1_acc": 0.4449999928474426,
+      "top5_acc": 0.7950000166893005,
+      "members": [
+        "image",
+        "text",
+        "depth",
+        "edge"
+      ]
+    },
+    "modavg_image+depth+edge+fusion": {
+      "top1_acc": 0.4300000071525574,
+      "top5_acc": 0.7699999809265137,
+      "members": [
+        "image",
+        "depth",
+        "edge",
+        "fusion"
+      ]
+    },
+    "modavg_image+text+depth+edge+fusion": {
+      "top1_acc": 0.4399999976158142,
+      "top5_acc": 0.7699999809265137,
+      "members": [
+        "image",
+        "text",
+        "depth",
+        "edge",
+        "fusion"
+      ]
+    },
+    "weighted_i70_d15_e15": {
+      "top1_acc": 0.4350000023841858,
+      "top5_acc": 0.7549999952316284,
+      "members": {
+        "image": 0.7,
+        "depth": 0.15,
+        "edge": 0.15
+      }
+    },
+    "weighted_i60_d20_e20": {
+      "top1_acc": 0.4399999976158142,
+      "top5_acc": 0.7950000166893005,
+      "members": {
+        "image": 0.6,
+        "depth": 0.2,
+        "edge": 0.2
+      }
+    },
+    "weighted_i50_d20_e20_f10": {
+      "top1_acc": 0.4749999940395355,
+      "top5_acc": 0.7799999713897705,
+      "members": {
+        "image": 0.5,
+        "depth": 0.2,
+        "edge": 0.2,
+        "fusion": 0.1
+      }
+    },
+    "weighted_i50_t10_d20_e20": {
+      "top1_acc": 0.44999998807907104,
+      "top5_acc": 0.7950000166893005,
+      "members": {
+        "image": 0.5,
+        "text": 0.1,
+        "depth": 0.2,
+        "edge": 0.2
+      }
+    },
+    "weighted_equal_i_t_d_e_f": {
+      "top1_acc": 0.4399999976158142,
+      "top5_acc": 0.7699999809265137,
+      "members": {
+        "image": 0.2,
+        "text": 0.2,
+        "depth": 0.2,
+        "edge": 0.2,
+        "fusion": 0.2
+      }
+    }
+  }
+}

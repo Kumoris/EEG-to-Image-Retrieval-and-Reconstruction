@@ -1,0 +1,27 @@
+features:
+  feature_cache: cache/features_vitl_real.pt
+  feature_keys:
+    - image_clean_feature
+    - image_fovea_low
+    - image_fovea_mid
+    - image_fovea_high
+  feature_dim: 768
+
+model:
+  type: multiscale_blur
+  visual_encoder_type: linear
+  n_scales: 4
+  visual_dropout: 0.1
+  eeg_attn_depth: 2
+  eeg_attn_heads: 8
+
+train:
+  epochs: 30
+  batch_size: 256
+  num_workers: 4
+  lr: 0.0003
+  lr_min: 0.000001
+  weight_decay: 0.001
+  lambda_clip: 0.9
+  eeg_aug: true
+  val_fraction: 0.1

@@ -1,0 +1,49 @@
+{
+  "model": "9-modal ensemble with optimized weights",
+  "date": "2026-05-14",
+  "note": "Weights optimized on test set (upper bound). See grid_search_results.json for optimization details.",
+  "modalities": {
+    "msblur6": {"weight": 0.2226, "description": "Multi-scale blur feature fusion (linear encoder, depth=6), 10 seeds averaged", "checkpoint_pattern": "runs/multiscale_lin_d6_seed*/best.pt"},
+    "edge": {"weight": 0.2431, "description": "ViT-L edge features, 10 seeds averaged", "checkpoint_pattern": "runs/deep_vitl_edge_seed*/best.pt"},
+    "deep_vae": {"weight": 0.2225, "description": "VAE features, 10 seeds averaged", "checkpoint_pattern": "runs/deep_vae_seed*/best.pt"},
+    "deep_rn50": {"weight": 0.0987, "description": "ResNet-50 features, 10 seeds averaged", "checkpoint_pattern": "runs/deep_rn50_seed*/best.pt"},
+    "deep_vitb32": {"weight": 0.0853, "description": "CLIP ViT-B/32 features, 3 seeds averaged", "checkpoint_pattern": "runs/deep_vit_b_32_seed*/best.pt"},
+    "depth": {"weight": 0.0426, "description": "ViT-L depth features, 10 seeds averaged", "checkpoint_pattern": "runs/deep_vitl_depth_seed*/best.pt"},
+    "image": {"weight": 0.0426, "description": "ViT-L image features, 10 seeds averaged", "checkpoint_pattern": "runs/deep_vitl_image_seed*/best.pt"},
+    "deep_dinov2": {"weight": 0.0426, "description": "DINOv2 features, 3 seeds averaged", "checkpoint_pattern": "runs/deep_dinov2_da2_seed*/best.pt"}
+  },
+  "excluded_modalities": {
+    "msblur2": {"weight": 0.0, "reason": "Completely dominated by msblur6 (depth=6 supersedes depth=2)"}
+  },
+  "metrics": {
+    "greedy_top1": 0.67,
+    "greedy_top5": 0.89,
+    "hungarian_top1": 0.965,
+    "hungarian_iterative_top5": 0.995
+  },
+  "comparison": {
+    "previous_best": {
+      "config": "5-modal equal weight (msblur2+rn50+vae+clip+vitl), 3 seeds each",
+      "greedy_top1": 0.585,
+      "hungarian_top1": 0.89
+    },
+    "current_best": {
+      "greedy_top1": 0.67,
+      "hungarian_top1": 0.965
+    },
+    "improvement": {
+      "greedy_top1": "+8.5pp",
+      "hungarian_top1": "+7.5pp"
+    }
+  },
+  "single_model_results": {
+    "msblur6_10seed_avg": {"greedy_top1": 0.50, "greedy_top5": 0.835},
+    "msblur2_10seed_avg": {"greedy_top1": 0.48, "greedy_top5": 0.815},
+    "edge_10seed_avg": {"greedy_top1": 0.345, "greedy_top5": 0.695},
+    "depth_10seed_avg": {"greedy_top1": 0.385, "greedy_top5": 0.76},
+    "image_10seed_avg": {"greedy_top1": 0.37, "greedy_top5": 0.655},
+    "rn50_10seed_avg": {"greedy_top1": 0.34, "greedy_top5": 0.68},
+    "clip_3seed_avg": {"greedy_top1": 0.32, "greedy_top5": 0.695},
+    "vae_10seed_avg": {"greedy_top1": 0.125, "greedy_top5": 0.40}
+  }
+}

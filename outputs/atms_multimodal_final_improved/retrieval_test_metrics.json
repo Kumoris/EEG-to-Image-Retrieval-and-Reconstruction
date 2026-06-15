@@ -1,0 +1,75 @@
+{
+  "split": "test",
+  "normalize": "row_zscore",
+  "metrics": {
+    "top1_acc": 0.49000000953674316,
+    "top5_acc": 0.8050000071525574
+  },
+  "weights": {
+    "image": 0.35,
+    "depth": 0.15,
+    "edge": 0.15,
+    "rn50": 0.1,
+    "vitb32": 0.1,
+    "dinov2": 0.1,
+    "vae": 0.05
+  },
+  "sources": {
+    "image": [
+      "results/atms_vitl_seed0_test_tta0.logits.pt",
+      "results/atms_vitl_seed1_test_tta0.logits.pt",
+      "results/atms_vitl_seed2_test_tta0.logits.pt",
+      "results/atms_vitl_seed3_test_tta0.logits.pt",
+      "results/atms_vitl_seed4_test_tta0.logits.pt",
+      "results/atms_vitl_seed5_test_tta0.logits.pt",
+      "results/atms_vitl_seed6_test_tta0.logits.pt",
+      "results/atms_vitl_seed7_test_tta0.logits.pt",
+      "results/atms_vitl_seed8_test_tta0.logits.pt",
+      "results/atms_vitl_seed9_test_tta0.logits.pt"
+    ],
+    "depth": [
+      "results/atms_depth_vitl_seed0_test_tta0.logits.pt",
+      "results/atms_depth_vitl_seed1_test_tta0.logits.pt",
+      "results/atms_depth_vitl_seed2_test_tta0.logits.pt",
+      "results/atms_depth_vitl_seed3_test_tta0.logits.pt",
+      "results/atms_depth_vitl_seed4_test_tta0.logits.pt",
+      "results/atms_depth_vitl_seed5_test_tta0.logits.pt",
+      "results/atms_depth_vitl_seed6_test_tta0.logits.pt",
+      "results/atms_depth_vitl_seed7_test_tta0.logits.pt",
+      "results/atms_depth_vitl_seed8_test_tta0.logits.pt",
+      "results/atms_depth_vitl_seed9_test_tta0.logits.pt"
+    ],
+    "edge": [
+      "results/atms_edge_vitl_seed0_test_tta0.logits.pt",
+      "results/atms_edge_vitl_seed1_test_tta0.logits.pt",
+      "results/atms_edge_vitl_seed2_test_tta0.logits.pt",
+      "results/atms_edge_vitl_seed3_test_tta0.logits.pt",
+      "results/atms_edge_vitl_seed4_test_tta0.logits.pt",
+      "results/atms_edge_vitl_seed5_test_tta0.logits.pt",
+      "results/atms_edge_vitl_seed6_test_tta0.logits.pt",
+      "results/atms_edge_vitl_seed7_test_tta0.logits.pt",
+      "results/atms_edge_vitl_seed8_test_tta0.logits.pt",
+      "results/atms_edge_vitl_seed9_test_tta0.logits.pt"
+    ],
+    "rn50": [
+      "results/atms_rn50_seed0_test.logits.pt",
+      "results/atms_rn50_seed1_test.logits.pt",
+      "results/atms_rn50_seed2_test.logits.pt"
+    ],
+    "vitb32": [
+      "results/atms_vitb32_seed0_test.logits.pt",
+      "results/atms_vitb32_seed1_test.logits.pt",
+      "results/atms_vitb32_seed2_test.logits.pt"
+    ],
+    "dinov2": [
+      "results/atms_dinov2_seed0_test.logits.pt",
+      "results/atms_dinov2_seed1_test.logits.pt",
+      "results/atms_dinov2_seed2_test.logits.pt"
+    ],
+    "vae": [
+      "results/atms_vae_seed0_test.logits.pt",
+      "results/atms_vae_seed1_test.logits.pt",
+      "results/atms_vae_seed2_test.logits.pt"
+    ]
+  }
+}

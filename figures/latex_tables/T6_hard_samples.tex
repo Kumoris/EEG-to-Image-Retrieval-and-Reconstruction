@@ -1,0 +1,15 @@
+\begin{table}[htbp]
+\centering
+\caption{Representative hard samples in retrieval. Some failures are caused by weak agreement across modalities, while others remain unresolved even by individual modality or seed-level predictions.}
+\label{tab:hard_samples}
+\begin{tabular}{ccclp{5cm}}
+\toprule
+\textbf{Sample ID} & \textbf{GT Rank (Ensemble)} & \textbf{Best Single-Mod Rank} & \textbf{Failure Type} & \textbf{Interpretation} \\
+\midrule
+91 & 65 & 3 (depth\_seed3) & Weak consensus & Only one seed/modality ranks GT highly \\
+16 & 7 & Top-5 in 7/45 models & Near miss & Close but insufficient for greedy Top-5 \\
+26 & $>$5 & $>$5 & Hard semantic failure & No single modality resolves it \\
+194 & $>$5 & 4 (best single model) & Persistent ambiguity & Cross-modal ambiguity \\
+\bottomrule
+\end{tabular}
+\end{table}

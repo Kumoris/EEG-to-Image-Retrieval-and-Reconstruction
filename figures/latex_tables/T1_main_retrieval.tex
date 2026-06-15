@@ -1,0 +1,14 @@
+\begin{table}[htbp]
+\centering
+\caption{Main retrieval results on the 200-way test protocol. Greedy Top-1 and Top-5 are the primary retrieval metrics, while Hungarian-based metrics are reported as closed-set matching analysis.}
+\label{tab:main_retrieval}
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Method} & \textbf{G-T1} & \textbf{G-T5} & \textbf{H-T1} & \textbf{IH-T5} \\
+\midrule
+Single best: msblur6 & 50.0\% & 83.5\% & --- & --- \\
+7-modal equal weights & 62.0\% & 89.0\% & 92.5\% & --- \\
+\textbf{9-modal optimized weights} & \textbf{67.0\%} & \textbf{89.0\%} & \textbf{96.5\%} & \textbf{99.5\%} \\
+\bottomrule
+\end{tabular}
+\end{table}

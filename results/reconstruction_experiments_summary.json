@@ -1,0 +1,81 @@
+{
+  "selection_rule": "max eval_clip, then eval_alex5, then eval_ssim",
+  "best_method": "diffusion_prompt",
+  "best_reconstruction_dir": "recons/atms_multimodal_final_improved",
+  "experiments": [
+    {
+      "method": "diffusion_img2img_train_source",
+      "reconstruction_dir": "recons/experiments/diffusion_img2img_train_source",
+      "num_png": 200,
+      "summary": {
+        "method": "diffusion_img2img_train_source",
+        "num_images": 200,
+        "diffusion_model": "stabilityai/sdxl-turbo",
+        "diffusion_variant": "fp16",
+        "diffusion_steps": 4,
+        "guidance_scale": 0.0,
+        "strength": 0.55,
+        "seed": 20260427,
+        "image_size": 256,
+        "leakage_policy": "uses only train images or deterministic placeholders as reconstruction sources; never copies test ground truth images",
+        "source_counts": {
+          "generated_diffusion_img2img_train_source": 200
+        }
+      },
+      "metrics": {
+        "num_images": 200,
+        "device": "cuda",
+        "eval_ssim": 0.3693530469309597,
+        "eval_alex2": 0.5482412060301507,
+        "eval_alex5": 0.642713567839196,
+        "eval_clip": 0.8048241206030151,
+        "clip_backend": "official_openai_clip_vit_l_14",
+        "eval_mse_fallback": 0.11788636445999146,
+        "eval_pixel_cosine_fallback": 0.8216394186019897
+      },
+      "eligible": true,
+      "selection_key": [
+        0.8048241206030151,
+        0.642713567839196,
+        0.3693530469309597
+      ]
+    },
+    {
+      "method": "diffusion_prompt",
+      "reconstruction_dir": "recons/experiments/diffusion_prompt",
+      "num_png": 200,
+      "summary": {
+        "method": "diffusion_prompt",
+        "num_images": 200,
+        "diffusion_model": "stabilityai/sdxl-turbo",
+        "diffusion_variant": "fp16",
+        "diffusion_steps": 4,
+        "guidance_scale": 0.0,
+        "strength": null,
+        "seed": 20260427,
+        "image_size": 256,
+        "leakage_policy": "uses only train images or deterministic placeholders as reconstruction sources; never copies test ground truth images",
+        "source_counts": {
+          "generated_diffusion_prompt": 200
+        }
+      },
+      "metrics": {
+        "num_images": 200,
+        "device": "cuda",
+        "eval_ssim": 0.38142380808198134,
+        "eval_alex2": 0.729924623115578,
+        "eval_alex5": 0.8533668341708543,
+        "eval_clip": 0.8639949748743718,
+        "clip_backend": "official_openai_clip_vit_l_14",
+        "eval_mse_fallback": 0.10468235611915588,
+        "eval_pixel_cosine_fallback": 0.8421444892883301
+      },
+      "eligible": true,
+      "selection_key": [
+        0.8639949748743718,
+        0.8533668341708543,
+        0.38142380808198134
+      ]
+    }
+  ]
+}

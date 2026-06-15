@@ -1,0 +1,11 @@
+{
+  "num_images": 200,
+  "device": "cuda",
+  "eval_ssim": 0.33570370839201447,
+  "eval_alex2": 0.7462311557788945,
+  "eval_alex5": 0.865251256281407,
+  "eval_clip": 0.8639698492462312,
+  "clip_backend": "official_openai_clip_vit_l_14",
+  "eval_mse_fallback": 0.12336476892232895,
+  "eval_pixel_cosine_fallback": 0.8048766851425171
+}

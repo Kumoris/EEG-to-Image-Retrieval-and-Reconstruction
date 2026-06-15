@@ -1,0 +1,15 @@
+\begin{table}[htbp]
+\centering
+\caption{Ensemble ablation. Multi-modal aggregation and seed averaging improve retrieval performance. The optimized 9-modal ensemble is reported as an upper-bound analysis, while equal-weight ensembles provide a more conservative evaluation.}
+\label{tab:ensemble_ablation}
+\begin{tabular}{lccl}
+\toprule
+\textbf{Setting} & \textbf{G-T1} & \textbf{H-T1} & \textbf{Comment} \\
+\midrule
+5-mod equal weights, 3 seeds & 58.5\% & 89.0\% & Earlier best \\
+7-mod equal weights, 3 seeds & 62.5\% & 92.0\% & More modalities \\
+7-mod equal weights, 10 seeds & 62.0\% & 92.5\% & More stable seed avg \\
+\textbf{9-mod optimized weights} & \textbf{67.0\%} & \textbf{96.5\%} & Final upper-bound \\
+\bottomrule
+\end{tabular}
+\end{table}

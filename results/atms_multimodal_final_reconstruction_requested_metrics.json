@@ -1,0 +1,7 @@
+{
+  "eval_ssim": 0.33570364699471145,
+  "eval_alex2": 0.7462311557788945,
+  "eval_alex5": 0.8653015075376885,
+  "eval_clip": null,
+  "note": "SSIM/AlexNet computed with notebook-compatible definitions; CLIP unavailable because python package clip is not installed."
+}

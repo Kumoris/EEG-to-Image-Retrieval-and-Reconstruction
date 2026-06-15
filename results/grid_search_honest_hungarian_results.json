@@ -1,0 +1,163 @@
+{
+  "mode": "train_optimize_test_evaluate",
+  "metric_scope": {
+    "hungarian_top1": "Closed-set bipartite optimal assignment (Kuhn-Munkres). Requires N_query == N_candidate. NOT directly comparable to standard retrieval Top-1.",
+    "greedy_top5": "Standard row-independent retrieval metric."
+  },
+  "n_subsamples": 10,
+  "best_train_weights": {
+    "deep_dinov2": 0.2322,
+    "deep_rn50": 0.2256,
+    "deep_vae": 0.2303,
+    "deep_vitb32": 0.027,
+    "depth": 0.0083,
+    "edge": 0.1403,
+    "image": 0.1362
+  },
+  "test_metrics": {
+    "top1_acc": 0.8700000047683716,
+    "top5_acc": 0.8849999904632568
+  },
+  "all_subsample_results": [
+    {
+      "subsample_idx": 0,
+      "train_top1": 1.0,
+      "train_top5": 1.0,
+      "weights": {
+        "deep_dinov2": 0.2322,
+        "deep_rn50": 0.2256,
+        "deep_vae": 0.2303,
+        "deep_vitb32": 0.027,
+        "depth": 0.0083,
+        "edge": 0.1403,
+        "image": 0.1362
+      }
+    },
+    {
+      "subsample_idx": 1,
+      "train_top1": 1.0,
+      "train_top5": 1.0,
+      "weights": {
+        "deep_dinov2": 0.2322,
+        "deep_rn50": 0.2256,
+        "deep_vae": 0.2303,
+        "deep_vitb32": 0.027,
+        "depth": 0.0083,
+        "edge": 0.1403,
+        "image": 0.1362
+      }
+    },
+    {
+      "subsample_idx": 2,
+      "train_top1": 1.0,
+      "train_top5": 1.0,
+      "weights": {
+        "deep_dinov2": 0.2322,
+        "deep_rn50": 0.2256,
+        "deep_vae": 0.2303,
+        "deep_vitb32": 0.027,
+        "depth": 0.0083,
+        "edge": 0.1403,
+        "image": 0.1362
+      }
+    },
+    {
+      "subsample_idx": 3,
+      "train_top1": 1.0,
+      "train_top5": 1.0,
+      "weights": {
+        "deep_dinov2": 0.2322,
+        "deep_rn50": 0.2256,
+        "deep_vae": 0.2303,
+        "deep_vitb32": 0.027,
+        "depth": 0.0083,
+        "edge": 0.1403,
+        "image": 0.1362
+      }
+    },
+    {
+      "subsample_idx": 4,
+      "train_top1": 1.0,
+      "train_top5": 1.0,
+      "weights": {
+        "deep_dinov2": 0.2322,
+        "deep_rn50": 0.2256,
+        "deep_vae": 0.2303,
+        "deep_vitb32": 0.027,
+        "depth": 0.0083,
+        "edge": 0.1403,
+        "image": 0.1362
+      }
+    },
+    {
+      "subsample_idx": 5,
+      "train_top1": 1.0,
+      "train_top5": 1.0,
+      "weights": {
+        "deep_dinov2": 0.2322,
+        "deep_rn50": 0.2256,
+        "deep_vae": 0.2303,
+        "deep_vitb32": 0.027,
+        "depth": 0.0083,
+        "edge": 0.1403,
+        "image": 0.1362
+      }
+    },
+    {
+      "subsample_idx": 6,
+      "train_top1": 1.0,
+      "train_top5": 1.0,
+      "weights": {
+        "deep_dinov2": 0.2322,
+        "deep_rn50": 0.2256,
+        "deep_vae": 0.2303,
+        "deep_vitb32": 0.027,
+        "depth": 0.0083,
+        "edge": 0.1403,
+        "image": 0.1362
+      }
+    },
+    {
+      "subsample_idx": 7,
+      "train_top1": 1.0,
+      "train_top5": 1.0,
+      "weights": {
+        "deep_dinov2": 0.2322,
+        "deep_rn50": 0.2256,
+        "deep_vae": 0.2303,
+        "deep_vitb32": 0.027,
+        "depth": 0.0083,
+        "edge": 0.1403,
+        "image": 0.1362
+      }
+    },
+    {
+      "subsample_idx": 8,
+      "train_top1": 1.0,
+      "train_top5": 1.0,
+      "weights": {
+        "deep_dinov2": 0.2322,
+        "deep_rn50": 0.2256,
+        "deep_vae": 0.2303,
+        "deep_vitb32": 0.027,
+        "depth": 0.0083,
+        "edge": 0.1403,
+        "image": 0.1362
+      }
+    },
+    {
+      "subsample_idx": 9,
+      "train_top1": 1.0,
+      "train_top5": 1.0,
+      "weights": {
+        "deep_dinov2": 0.2322,
+        "deep_rn50": 0.2256,
+        "deep_vae": 0.2303,
+        "deep_vitb32": 0.027,
+        "depth": 0.0083,
+        "edge": 0.1403,
+        "image": 0.1362
+      }
+    }
+  ]
+}

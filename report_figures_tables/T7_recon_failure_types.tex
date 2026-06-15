@@ -1,0 +1,16 @@
+\begin{table}[htbp]
+\centering
+\caption{Summary of reconstruction success and failure types. The train-nearest reconstruction strategy often preserves coarse semantic similarity but may fail in fine-grained color, shape, or object-specific details.}
+\label{tab:recon_failure_types}
+\begin{tabular}{lp{6cm}l}
+\toprule
+\textbf{Failure Type} & \textbf{Description} & \textbf{Example} \\
+\midrule
+Semantic success & Correct object category or scene type is preserved & Samples with high CLIP score \\
+Color mismatch & Similar object but different color & Blue vs. red objects \\
+Shape mismatch & Correct semantic class but wrong geometry/shape & Round vs. elongated objects \\
+Background dominance & Background texture matched better than foreground & Outdoor scenes \\
+Semantic failure & Reconstructed image belongs to wrong object category & Very low CLIP score samples \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,186 @@
+{
+  "mode": "test_optimize_original",
+  "metric_scope": {
+    "note": "Weights optimized directly on test set. For reference/upper-bound only, NOT a valid generalization estimate."
+  },
+  "current_weights": {
+    "image": 0.35,
+    "depth": 0.15,
+    "edge": 0.15,
+    "deep_rn50": 0.1,
+    "deep_vitb32": 0.1,
+    "deep_dinov2": 0.1,
+    "deep_vae": 0.05
+  },
+  "current_metrics": {
+    "top1_acc": 0.5350000262260437,
+    "top5_acc": 0.8600000143051147
+  },
+  "best": {
+    "top1_acc": 0.7049999833106995,
+    "top5_acc": 0.8899999856948853,
+    "weights": {
+      "deep_dinov2": 0.0426,
+      "deep_rn50": 0.0987,
+      "deep_vae": 0.2225,
+      "deep_vitb32": 0.0853,
+      "depth": 0.0426,
+      "edge": 0.2431,
+      "image": 0.0426,
+      "msblur2": 0.0,
+      "msblur6": 0.2226
+    }
+  },
+  "top_results": [
+    {
+      "top1_acc": 0.7049999833106995,
+      "top5_acc": 0.8899999856948853,
+      "weights": {
+        "deep_dinov2": 0.0426,
+        "deep_rn50": 0.0987,
+        "deep_vae": 0.2225,
+        "deep_vitb32": 0.0853,
+        "depth": 0.0426,
+        "edge": 0.2431,
+        "image": 0.0426,
+        "msblur2": 0.0,
+        "msblur6": 0.2226
+      }
+    },
+    {
+      "top1_acc": 0.7049999833106995,
+      "top5_acc": 0.8899999856948853,
+      "weights": {
+        "deep_dinov2": 0.0445,
+        "deep_rn50": 0.1031,
+        "deep_vae": 0.3214,
+        "deep_vitb32": 0.0,
+        "depth": 0.0,
+        "edge": 0.1649,
+        "image": 0.0,
+        "msblur2": 0.0,
+        "msblur6": 0.3661
+      }
+    },
+    {
+      "top1_acc": 0.699999988079071,
+      "top5_acc": 0.8949999809265137,
+      "weights": {
+        "deep_dinov2": 0.0,
+        "deep_rn50": 0.0987,
+        "deep_vae": 0.2651,
+        "deep_vitb32": 0.0853,
+        "depth": 0.0,
+        "edge": 0.2431,
+        "image": 0.0,
+        "msblur2": 0.0,
+        "msblur6": 0.3079
+      }
+    },
+    {
+      "top1_acc": 0.699999988079071,
+      "top5_acc": 0.8949999809265137,
+      "weights": {
+        "deep_dinov2": 0.0853,
+        "deep_rn50": 0.0987,
+        "deep_vae": 0.3077,
+        "deep_vitb32": 0.0,
+        "depth": 0.0,
+        "edge": 0.2005,
+        "image": 0.0,
+        "msblur2": 0.0,
+        "msblur6": 0.3079
+      }
+    },
+    {
+      "top1_acc": 0.699999988079071,
+      "top5_acc": 0.8949999809265137,
+      "weights": {
+        "deep_dinov2": 0.0728,
+        "deep_rn50": 0.1207,
+        "deep_vae": 0.2993,
+        "deep_vitb32": 0.0,
+        "depth": 0.0,
+        "edge": 0.1713,
+        "image": 0.0,
+        "msblur2": 0.0,
+        "msblur6": 0.3358
+      }
+    },
+    {
+      "top1_acc": 0.699999988079071,
+      "top5_acc": 0.8949999809265137,
+      "weights": {
+        "deep_dinov2": 0.0657,
+        "deep_rn50": 0.1088,
+        "deep_vae": 0.3027,
+        "deep_vitb32": 0.0,
+        "depth": 0.0,
+        "edge": 0.1872,
+        "image": 0.0,
+        "msblur2": 0.0328,
+        "msblur6": 0.3028
+      }
+    },
+    {
+      "top1_acc": 0.699999988079071,
+      "top5_acc": 0.8949999809265137,
+      "weights": {
+        "deep_dinov2": 0.0657,
+        "deep_rn50": 0.1088,
+        "deep_vae": 0.3027,
+        "deep_vitb32": 0.0,
+        "depth": 0.0,
+        "edge": 0.1872,
+        "image": 0.0328,
+        "msblur2": 0.0,
+        "msblur6": 0.3028
+      }
+    },
+    {
+      "top1_acc": 0.699999988079071,
+      "top5_acc": 0.8899999856948853,
+      "weights": {
+        "deep_dinov2": 0.0409,
+        "deep_rn50": 0.0947,
+        "deep_vae": 0.2134,
+        "deep_vitb32": 0.1227,
+        "depth": 0.0409,
+        "edge": 0.2332,
+        "image": 0.0,
+        "msblur2": 0.0,
+        "msblur6": 0.2544
+      }
+    },
+    {
+      "top1_acc": 0.699999988079071,
+      "top5_acc": 0.8899999856948853,
+      "weights": {
+        "deep_dinov2": 0.0542,
+        "deep_rn50": 0.1254,
+        "deep_vae": 0.3369,
+        "deep_vitb32": 0.0,
+        "depth": 0.0,
+        "edge": 0.1464,
+        "image": 0.0,
+        "msblur2": 0.0,
+        "msblur6": 0.3371
+      }
+    },
+    {
+      "top1_acc": 0.699999988079071,
+      "top5_acc": 0.8899999856948853,
+      "weights": {
+        "deep_dinov2": 0.0393,
+        "deep_rn50": 0.1302,
+        "deep_vae": 0.205,
+        "deep_vitb32": 0.0786,
+        "depth": 0.0393,
+        "edge": 0.224,
+        "image": 0.0,
+        "msblur2": 0.0,
+        "msblur6": 0.2837
+      }
+    }
+  ]
+}

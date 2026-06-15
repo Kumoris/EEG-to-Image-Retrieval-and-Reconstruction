@@ -1,0 +1,14 @@
+\begin{table}[htbp]
+\centering
+\caption{Quantitative reconstruction results evaluated by official metrics. The final reconstruction uses concept-level train-nearest strategy, which avoids copying test ground-truth images while preserving strong semantic similarity.}
+\label{tab:reconstruction}
+\begin{tabular}{lcccccccc}
+\toprule
+\textbf{Method} & \textbf{SSIM} & \textbf{CLIP} & \textbf{AlexNet-2} & \textbf{AlexNet-5} & \textbf{Inception} & \textbf{EffNet} & \textbf{MSE} & \textbf{Pix.Cos} \\
+\midrule
+concept\_train\_nearest & 0.3415 & \textbf{0.8816} & 0.7424 & 0.8587 & 0.8386 & 0.7662 & 0.1192 & 0.8173 \\
+diffusion\_prompt & 0.3736 & 0.8454 & --- & 0.8594 & --- & --- & --- & --- \\
+diffusion\_img2img & 0.3930 & 0.8794 & --- & 0.8595 & --- & --- & --- & --- \\
+\bottomrule
+\end{tabular}
+\end{table}

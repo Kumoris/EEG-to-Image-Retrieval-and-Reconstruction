@@ -1,0 +1,14 @@
+\begin{table}[htbp]
+\centering
+\caption{Comparison between standard greedy retrieval and Hungarian-based closed-set matching. Hungarian matching enforces a global one-to-one assignment and is therefore analyzed separately from the standard Top-1 and Top-5 retrieval metrics.}
+\label{tab:greedy_vs_hungarian}
+\begin{tabular}{llccp{4cm}}
+\toprule
+\textbf{Evaluation} & \textbf{Constraint} & \textbf{Top-1} & \textbf{Top-5} & \textbf{Interpretation} \\
+\midrule
+Greedy retrieval & Independent ranking & 67.0\% & 89.0\% & Standard retrieval metric \\
+Hungarian matching & Global 1-to-1 assignment & 96.5\% & --- & Closed-set only \\
+Iterative Hungarian & K-best 1-to-1 assignment & 96.5\% & 99.5\% & Closed-set Top-K \\
+\bottomrule
+\end{tabular}
+\end{table}

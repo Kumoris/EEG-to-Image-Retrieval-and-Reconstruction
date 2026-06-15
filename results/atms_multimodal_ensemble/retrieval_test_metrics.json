@@ -1,0 +1,55 @@
+{
+  "split": "test",
+  "normalize": "row_zscore",
+  "metrics": {
+    "top1_acc": 0.4749999940395355,
+    "top5_acc": 0.7799999713897705
+  },
+  "weights": {
+    "image": 0.5,
+    "depth": 0.2,
+    "edge": 0.2,
+    "fusion": 0.1
+  },
+  "sources": {
+    "image": [
+      "results/atms_vitl_seed0_test_tta0.logits.pt",
+      "results/atms_vitl_seed1_test_tta0.logits.pt",
+      "results/atms_vitl_seed2_test_tta0.logits.pt",
+      "results/atms_vitl_seed3_test_tta0.logits.pt",
+      "results/atms_vitl_seed4_test_tta0.logits.pt",
+      "results/atms_vitl_seed5_test_tta0.logits.pt",
+      "results/atms_vitl_seed6_test_tta0.logits.pt",
+      "results/atms_vitl_seed7_test_tta0.logits.pt",
+      "results/atms_vitl_seed8_test_tta0.logits.pt",
+      "results/atms_vitl_seed9_test_tta0.logits.pt"
+    ],
+    "depth": [
+      "results/atms_depth_vitl_seed0_test_tta0.logits.pt",
+      "results/atms_depth_vitl_seed1_test_tta0.logits.pt",
+      "results/atms_depth_vitl_seed2_test_tta0.logits.pt",
+      "results/atms_depth_vitl_seed3_test_tta0.logits.pt",
+      "results/atms_depth_vitl_seed4_test_tta0.logits.pt",
+      "results/atms_depth_vitl_seed5_test_tta0.logits.pt",
+      "results/atms_depth_vitl_seed6_test_tta0.logits.pt",
+      "results/atms_depth_vitl_seed7_test_tta0.logits.pt",
+      "results/atms_depth_vitl_seed8_test_tta0.logits.pt",
+      "results/atms_depth_vitl_seed9_test_tta0.logits.pt"
+    ],
+    "edge": [
+      "results/atms_edge_vitl_seed0_test_tta0.logits.pt",
+      "results/atms_edge_vitl_seed1_test_tta0.logits.pt",
+      "results/atms_edge_vitl_seed2_test_tta0.logits.pt",
+      "results/atms_edge_vitl_seed3_test_tta0.logits.pt",
+      "results/atms_edge_vitl_seed4_test_tta0.logits.pt",
+      "results/atms_edge_vitl_seed5_test_tta0.logits.pt",
+      "results/atms_edge_vitl_seed6_test_tta0.logits.pt",
+      "results/atms_edge_vitl_seed7_test_tta0.logits.pt",
+      "results/atms_edge_vitl_seed8_test_tta0.logits.pt",
+      "results/atms_edge_vitl_seed9_test_tta0.logits.pt"
+    ],
+    "fusion": [
+      "results/atms_fusion_vitl_seed0_test.logits.pt"
+    ]
+  }
+}

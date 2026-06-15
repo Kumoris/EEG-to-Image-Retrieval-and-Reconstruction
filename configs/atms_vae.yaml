@@ -1,0 +1,15 @@
+features:
+  backbone: sd_vae
+  feature_dim: 512
+  feature_cache_key: vae_feature
+train:
+  epochs: 40
+  batch_size: 256
+  num_workers: 4
+  lr: 0.0001
+  lr_min: 0.000005
+  weight_decay: 0.001
+  lambda_clip: 0.5
+  lambda_mse: 0.5
+  eeg_aug: true
+  val_fraction: 0.1

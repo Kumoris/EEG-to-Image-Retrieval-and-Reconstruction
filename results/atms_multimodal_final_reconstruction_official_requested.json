@@ -1,0 +1,12 @@
+{
+  "num_images": 200,
+  "device": "cuda",
+  "eval_ssim": 0.33570370839201447,
+  "eval_alex2": 0.7462311557788945,
+  "eval_alex5": 0.865251256281407,
+  "metric_errors": {
+    "clip": "OpenAI clip failed: No module named 'clip'; open_clip fallback failed: Unknown scheme for proxy URL URL('socks5h://127.0.0.1:10000')"
+  },
+  "eval_mse_fallback": 0.12336476892232895,
+  "eval_pixel_cosine_fallback": 0.8048766851425171
+}

@@ -1,0 +1,11 @@
+{
+  "num_images": 200,
+  "device": "cuda",
+  "eval_ssim": 0.33570370839201447,
+  "eval_alex2": 0.7462311557788945,
+  "eval_alex5": 0.865251256281407,
+  "eval_clip": 0.8965577889447236,
+  "clip_backend": "open_clip_vit_l_14_laion2b_s32b_b82k_fallback_after_openai_clip_error: No module named 'clip'; pretrained=/root/.cache/huggingface/hub/models--laion--CLIP-ViT-L-14-laion2B-s32B-b82K/blobs/5ddb47339f44e4fd9cace3d3960d38af1b51a25857440cfae90afc44706d7e2b",
+  "eval_mse_fallback": 0.12336476892232895,
+  "eval_pixel_cosine_fallback": 0.8048766851425171
+}

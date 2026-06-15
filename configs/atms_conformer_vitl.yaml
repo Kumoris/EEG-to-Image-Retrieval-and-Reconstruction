@@ -1,0 +1,27 @@
+model:
+  type: conformer
+  d_model: 256
+  num_heads: 8
+  num_layers: 6
+  ffn_mult: 4
+  dropout: 0.1
+  use_cls: true
+  proj_hidden: 1024
+  proj_blocks: 2
+  proj_drop: 0.3
+
+features:
+  clip_backbone: ViT-L-14
+  clip_pretrained: laion2b_s32b_b82k
+  feature_dim: 768
+
+train:
+  epochs: 50
+  batch_size: 256
+  num_workers: 4
+  lr: 0.0003
+  lr_min: 0.000001
+  weight_decay: 0.001
+  lambda_clip: 0.9
+  eeg_aug: true
+  val_fraction: 0.1
